@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/image/logo-orange.webp">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <title>Unibank</title>
+
+</head>
+<body>
+
+    <div class="customcontainer">
+        <div class="responsiveheader d-none">
+            <div class="hamburgermenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="https://unibank.az/assets/images/logonew-orange1.png" alt=""></a>
+            </div>
+            <div class="phone">
+                <a href="tel:117">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>117</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburgermenudiv d-none">
+        <div class="menuhamburger">
+            <a href="#" class="firstmenu active">Fərdi</a>
+            <a href="#" class="secondmenu">Biznes</a>
+        </div>
+        <div class="navigationmenu">
+            <a href="cards.html">Kartlar</a>
+            <a href="#">Kreditlər</a>
+            <a href="#">Əmanətlər</a>
+            <a href="#">Köçürmələr</a>
+            <a href="#">Rəqəmsal bankçılıq</a>
+            <a href="#">Əlavə xidmətlər</a>
+        </div>
+        <div class="navbarmenu">
+            <a href="service.html">Xidmət şəbəkəsi</a>
+            <a href="#">Bank haqqında</a>
+            <a href="#">Keşbek</a>
+            <a href="#">Tariflər</a>
+            <a href="hr.html">İnsan Resursları</a>
+            <a href="#">Bankla əlaqə və təkliflər</a>
+        </div>
+        <div class="optionmenu">
+            <div class="themehamburger">
+                <i class="fa-regular fa-moon night"></i>
+                <i id="sun" class="fa-regular fa-sun morning d-none"></i>
+            </div>
+            <div class="searchresp">
+                <span class="searchloopresp"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="langhamburger">
+                <a href="#" class="d-none">AZE</a>
+                <a href="#">ENG</a>
+                <a href="#">RUS</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+        <div class="topheader">
+
+            <div class="row">
+
+                <div class="col lg-7">
+                    <a href="./index.html"><img src="./assets/image/logo-orange.webp" alt=""></a>
+                    <a href="./services.html">Xidmət şəbəkəsi</a>
+                    <a href="">Bank haqqında</a>
+                    <a href="">Keşbek</a>
+                    <a href="">Tariflər</a>
+                    <a href="./hr.html">İnsan Resursları</a>
+                    <a href="">Bankla əlaqə və təkliflər</a>
+                </div>
+    
+                <div class="col-lg-5">
+                    <a id="individual" href="">Fərdi</a>
+                    <a id="business" href="">Biznes</a>
+                    <i id="changeBackground" class="fa-regular fa-moon"></i>
+                    <a id="langandsearch" href="">ENG</a>
+                    <a id="langandsearch" href="">RUS</a>
+                    <i id="opensearch" onclick="opensearchbox()" class="fa-solid fa-magnifying-glass"></i>
+                    <a href="./basket.html">
+                        <i class="fa-solid fa-basket-shopping">
+                            <span class="count">0</span>
+                        </i>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="search" id="searchbox">
+            <div class="cancel">
+                <a id="closesearchbrn" href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="text">
+                <h1>Axtarış</h1>
+            </div>
+            <div class="input">
+                <input type="text"><span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i></span>
+            </div>
+
+        </div>
+
+        <div id="buttonheader" class="buttonheader">
+
+            <div class="row">
+
+                <div class="col-lg-9">
+                    <a href="./cards.html">Kartlar</a>
+                    <a href="">Kreditlər</a>
+                    <a href="">Əmanətlər</a>
+                    <a href="">Köçürmələr</a>
+                    <a href="">Rəqəmsal bankçılıq</a>
+                    <a href="">Əlavə xidmətlər</a>
+                </div>
+    
+                <div class="col-lg-3">
+                    <a id="phone" href=""><i class="fa-solid fa-phone"></i>  117</a>
+                    <a id="internetbanking" href="./internetbanking.html"><i class="fa-solid fa-circle-arrow-right"></i>  İnternet bankçılıq</a>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="servicesmain">
+        <div class="stitle">
+            <h1>Xidmət şəbəkəsi</h1>
+        </div>
+
+        <div class="branc">
+            <a href="#" class="active">Bütün filiallar</a>
+            <a href="#">Şənbə filialları</a>
+            <a href="#">Biznes filialları</a>
+            <a href="#">UTM</a>
+            <a href="#">Terminallar</a>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.6492972524093!2d49.84232507574149!3d40.37229997144683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d40b0b057c1%3A0xfb5a3e127ac2f6de!2sUnibank%2017%20sayl%C4%B1%20filial%20(Sahil)!5e0!3m2!1sen!2saz!4v1682822499303!5m2!1sen!2saz" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="brancsinfo">
+            <div class="brancinfo">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Mərkəzi ofis</h4>
+                        <p>Bakı ş., R.Behbudov küç. 55, AZ1014</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Bazar ertəsi - Cümə 9:00 – 18:00*</p>
+                        <p>Şənbə/Bazar: fəaliyyət göstərmir.</p>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="note">
+            <div class="row">
+                <div class="col-lg-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="col-lg-10">
+                    <p>Qeyd: 17:00-dan sonra kart və kredit üzrə xidmətlər göstərilir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="topfooter">
+
+            <ul>
+                <li><a id="title" href="">Kartlar</a></li>
+                <li><a id="titleitem" href="">Kartlar</a></li>
+                <li><a id="titleitem"  href="">Debet kartlar</a></li>
+                <li><a id="titleitem"  href="">Digər</a></li>
+              </ul>
+    
+              <ul>
+                <li><a id="title" href="">Kreditlər</a></li>
+                <li><a id="titleitem"  href="">Nağd</a></li>
+                <li><a id="titleitem"  href="">Mikro</a></li>
+                <li><a id="titleitem"  href="">İpoteka</a></li>
+            </ul>
+    
+            <ul>
+                <li><a id="title" href="">Əmanətlər</a></li>
+                <li><a id="titleitem"  href="">Əmanətlər</a></li>
+                <li><a id="titleitem"  href="">Proqressiv</a></li>
+                <li><a id="titleitem"  href="">Yığım</a></li>
+                <li><a id="titleitem"  href="">Faizlər əvvəlcədən</a></li>
+                <li><a id="titleitem" href="">Topla</a></li> 
+            </ul>
+    
+            <ul>
+                <li><a id="title" href="">Köçürmələr</a></li>
+                <li><a id="titleitem" href="">Ölkəxarici</a></li>
+                <li><a id="titleitem"  href="">Ölkədaxili</a></li>
+            </ul>
+    
+            <ul>
+                <li><a id="title" href="">Rəqəmsal bankçılıq</a></li>
+                <li><a id="titleitem"  href="">UBank</a></li>
+                <li><a id="titleitem"  href="">İnternet bankçılıq</a></li>
+                <li><a id="titleitem"  href="">Şəxsi kabinet</a></li>
+                <li><a id="titleitem"  href="">Unimiles şəxsi kabinet</a></li>
+                <li><a id="titleitem"  href="">Onlayn kredit ödənişi</a></li>
+                <li><a id="titleitem"  href="">Onlayn kredit müraciəti</a></li>
+            </ul>
+    
+            <ul>
+                <li><a id="title" href="">Əlavə xidmətlər</a></li>
+                <li><a id="titleitem"  href="">Hesablaşma-kassa xidməti</a></li>
+                <li><a id="titleitem"  href="">POS terminal / Smart kassa</a></li>
+                <li><a id="titleitem"  href="">Depozit qutuları</a></li>
+                <li><a id="titleitem"  href="">Onlayn ticarət (eCommerce)</a></li>
+            </ul>
+    
+            <ul>
+                <li><a id="title" href="">Bank haqqında</a></li>
+                <li><a id="titleitem"  href="">Rəhbərlik</a></li>
+                <li><a id="titleitem"  href="">Müxbir hesablar</a></li>
+                <li><a id="titleitem"  href="">Təklif və Şikayətlər</a></li>
+                <li><a id="titleitem"  href="">İnsan resursları</a></li>
+                <li><a id="titleitem"  href="">Hesabatlar</a></li>
+                <li><a id="titleitem"  href="">Digər sənədlər</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="middlefooter">
+            <a href=""><i id="ios" class="fa-brands fa-apple"></i></a>
+            <a href=""><i id="android" class="fa-solid fa-robot"></i></a>
+            <a href=""><i id="ficon"  class="fa-brands fa-facebook"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-twitter"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-youtube"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-telegram"></i></a>
+    
+        </div>
+    
+    
+        <div class="footerline">
+            <hr style="margin: 2rem 0;">
+        </div>
+    
+    
+        <div class="buttonfooter">
+    
+            <div class="row">
+    
+                <div class="col-lg-6">
+                    <p id="titleitem" >© 2023, Unibank - Sənin Bankın</p>
+                    <p id="titleitem" >Bütün hüquqlar qorunur.</p>
+                </div>
+    
+                <div class="col-lg-6">
+                    <a href=""><img src="./assets/image/adif.png" alt=""></a>
+                    <a href=""><img src="./assets/image/EHP.png" alt=""></a>
+                    <a href=""><img src="./assets/image/infobank.png" alt=""></a>
+                    <a href=""><img src="./assets/image/msp.png" alt=""></a>
+                </div>
+    
+            </div>
+                            
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/appp.js"></script>
+    <script src="./assets/js/basket.js"></script>
+    <script src="./assets/js/hr.js"></script>
+    <script src="./assets/js/internetbanking.js"></script>
+    <script src="./assets/js/services.js"></script>
+</body>
+</html>

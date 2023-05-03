@@ -1,0 +1,50 @@
+.col-12{
+    
+ul{
+    img{
+        width: 100px;
+    }
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover{
+        background-color: #FF6400;
+    }
+    li{
+        width: 20%;
+        text-align: center;
+        font-size: 20px;
+        padding: 5px;
+        input{
+            width: 50px;
+            height: 30px;
+            padding: 10px;
+            border: none;
+        }
+        
+    }
+}
+
+.darkthema{
+    ul{background-color: #323232 !important;
+        &:hover{
+            background-color: #FF6400 !important;
+            input{
+                background-color: #FF6400 !important;
+            }
+        }
+        li{
+            input{
+                background-color:#323232 !important ;
+            }
+        }
+    }
+
+}
+}

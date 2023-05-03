@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/image/logo-orange.webp">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <title>Unibank</title>
+
+</head>
+<body>
+    <div class="customcontainer">
+        <div class="responsiveheader d-none">
+            <div class="hamburgermenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="https://unibank.az/assets/images/logonew-orange1.png" alt=""></a>
+            </div>
+            <div class="phone">
+                <a href="tel:117">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>117</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburgermenudiv d-none">
+        <div class="menuhamburger">
+            <a href="#" class="firstmenu active">Fərdi</a>
+            <a href="#" class="secondmenu">Biznes</a>
+        </div>
+        <div class="navigationmenu">
+            <a href="cards.html">Kartlar</a>
+            <a href="#">Kreditlər</a>
+            <a href="#">Əmanətlər</a>
+            <a href="#">Köçürmələr</a>
+            <a href="#">Rəqəmsal bankçılıq</a>
+            <a href="#">Əlavə xidmətlər</a>
+        </div>
+        <div class="navbarmenu">
+            <a href="service.html">Xidmət şəbəkəsi</a>
+            <a href="#">Bank haqqında</a>
+            <a href="#">Keşbek</a>
+            <a href="#">Tariflər</a>
+            <a href="hr.html">İnsan Resursları</a>
+            <a href="#">Bankla əlaqə və təkliflər</a>
+        </div>
+        <div class="optionmenu">
+            <div class="themehamburger">
+                <i class="fa-regular fa-moon night"></i>
+                <i id="sun" class="fa-regular fa-sun morning d-none"></i>
+            </div>
+            <div class="searchresp">
+                <span class="searchloopresp"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="langhamburger">
+                <a href="#" class="d-none">AZE</a>
+                <a href="#">ENG</a>
+                <a href="#">RUS</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        
+
+        <div class="topheader">
+
+            <div class="row">
+
+                <div class="col lg-7">
+                    <a href="./index.html"><img src="./assets/image/logo-orange.webp" alt=""></a>
+                    <a href="./services.html">Xidmət şəbəkəsi</a>
+                    <a href="">Bank haqqında</a>
+                    <a href="">Keşbek</a>
+                    <a href="">Tariflər</a>
+                    <a href="./hr.html">İnsan Resursları</a>
+                    <a href="">Bankla əlaqə və təkliflər</a>
+                </div>
+    
+                <div class="col-lg-5">
+                    <a id="individual" href="">Fərdi</a>
+                    <a id="business" href="">Biznes</a>
+                    <i id="changeBackground" class="fa-regular fa-moon"></i>
+                    <a id="langandsearch" href="">ENG</a>
+                    <a id="langandsearch" href="">RUS</a>
+                    <i id="opensearch" onclick="opensearchbox()" class="fa-solid fa-magnifying-glass"></i>
+                    <a href="./basket.html">
+                        <i class="fa-solid fa-basket-shopping">
+                            <span class="count">0</span>
+                        </i>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="search" id="searchbox">
+            <div class="cancel">
+                <a id="closesearchbrn" href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="text">
+                <h1>Axtarış</h1>
+            </div>
+            <div class="input">
+                <input type="text"><span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i></span>
+            </div>
+
+        </div>
+
+        <div id="buttonheader" class="buttonheader">
+
+            <div class="row">
+
+                <div class="col-lg-9">
+                    <a href="./cards.html">Kartlar</a>
+                    <a href="">Kreditlər</a>
+                    <a href="">Əmanətlər</a>
+                    <a href="">Köçürmələr</a>
+                    <a href="">Rəqəmsal bankçılıq</a>
+                    <a href="">Əlavə xidmətlər</a>
+                </div>
+    
+                <div class="col-lg-3">
+                    <a id="phone" href=""><i class="fa-solid fa-phone"></i>  117</a>
+                    <a id="internetbanking" href="./internetbanking.html"><i class="fa-solid fa-circle-arrow-right"></i>  İnternet bankçılıq</a>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="swiper" >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="row">
+    
+                    <div class="col-lg-6" id="sliderleft">
+                        <img src="./assets/image/azn-dovriyye.webp" alt="">
+                    </div>
+        
+                    <div class="col-lg-6" id="sliderright">
+                        <h4>Ləğv olundu!</h4>
+                        <p>
+                            Artıq UCard-la dünyanın istənilən yanacaqdoldurma, 
+                            kafe-restoran və marketlərində 5% keşbek qazanmaq 
+                            üçün 200 AZN dövriyyə tələbi yoxdur!
+                        </p>
+                        <a id="a" href="">Ətraflı</a>
+                    </div>
+        
+                </div>
+    
+            </div>
+    
+            <div class="swiper-slide">
+    
+                <div class="row" style="padding-bottom: 10rem;">
+    
+                    <div class="col-lg-6" id="sliderleft">
+                        <img src="./assets/image/Toplabanner.webp" alt="" style="height: 147%; width: 80%;">
+                    </div>
+        
+                    <div class="col-lg-6" id="sliderright">
+                        <h4>Topla</h4>
+                        <p>İstənilən arzunu reallaşdır! Hədəfinə ad ver və daxılına pul köçürməyə başla!</p>
+                        <a href="">Ətraflı</a>
+                    </div>
+
+                </div>
+    
+            </div>
+    
+    
+            <div class="swiper-slide">
+    
+                <div class="row">
+    
+                    <div class="col-lg-6" id="sliderleft">
+                        <img src="./assets/image/cover-ne.webp" alt="">
+                    </div>
+        
+                    <div class="col-lg-6" id="sliderright">
+                        <h4>Sənin kartın, sənin “art”ın!</h4>
+                        <p>
+                            UBank-a daxil ol, Apple Wallet / Google Wallet™dakı 
+                            Unibank kartlarını istədiyin dizayna dəyiş və hamıdan 
+                            fərqli ol!
+                        </p>
+                    </div>
+        
+                </div>
+    
+            </div>
+        
+    
+            <div class="swiper-slide">
+    
+                <div class="row" style="padding-bottom: 10rem;">
+    
+                    <div class="col-lg-6" id="sliderleft">
+                        <img src="./assets/image/digerbank.gif" alt="" style="height: 148.5%; width: 70%;">
+                    </div>
+        
+                    <div class="col-lg-6" id="sliderright">
+                        <h4>Kartdan karta pulsuzdur!</h4>
+                        <p>
+                            Unibank kartlarına limitsiz, ölkədaxili digər bank kartlarına 
+                            isə 2000 AZN-dək köçürmələri 0% ilə et!
+                        </p>
+                    </div>
+        
+                </div>
+    
+            </div>
+        </div>
+      
+        <div class="pagination"></div>
+      
+    </div>
+    
+    <div class="cards">
+
+        <div class="row" >
+            
+            <div id="card" class="col-lg-2">
+                <div  id="1" class="div">
+                    <h5 id="ala">Nağd kreditlər</h5>
+                    <h1 id="main">16%</h1>
+                    <p>-dən başlayaraq</p>
+                    <a id="btn" href="">Sifariş et</a>
+                </div>
+            </div>
+            
+            <div id="card" class="col-lg-2">
+                <div  id="2" class="div">
+                    <h5>Əmanətlər</h5>
+                    <h1 id="main">11%</h1>
+                    <p>-dək illik gəlir</p>
+                    <a id="btn" href="">Sifariş et</a>
+                </div>
+            </div>
+
+            <div id="card" class="col-lg-2">
+                <div  id="3" class="div">
+                    <h5>Plastik kartlar</h5>
+                    <h1 id="main">30%</h1>
+                    <p>-dək keşbek xidməti</p>
+                    <a id="btn" href="">Sifariş et</a>
+                </div>
+            </div>
+
+            <div id="card"class="col-lg-2">
+                <div  id="4" class="div">
+                    <h5>Kredit kartı</h5>
+                    <h1 id="main">40</h1>
+                    <p>günədkə güzəşt müddəti</p>
+                    <a id="btn" href="">Sifariş et</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="ucard">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <img src="./assets/image/ucard.webp" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                <h1 id="main">Sənin kartın - UCarddır!</h1>
+                <p>Bu kart sənə dünyanın istənilən yerində multivalyutalı 
+                    hesablarla alış-veriş imkanı, 10 000 ₼-dək və 40 günədək 
+                    faizsiz kredit xətti, 30%-dək keşbek və illik 6%-dək gəlir 
+                    əldə etmək imkanı verir. Bir sözlə, bütün ehtiyaclar tək kartda!
+                </p>
+                <a id="more" href="">Ətraflı</a>
+                <a id="other" href="">Partnyorlar</a>
+                <a id="other" href="">Şəxsi kabinet</a>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="ubank">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <h1 id="main">UBank</h1>
+                <p>UBank 24/7 bank xidmətlərinə çıxışı smartfonunda təmin edən mobil əlavədir. 
+                    Ödənişlərini banka gəlmədən, telefonunuzda bir toxunuşla həyata keçir!
+                </p>
+                <img src="./assets/image/playstore.svg" alt="">
+                <img src="./assets/image/appstore.svg" alt="">
+                <img src="./assets/image/app-gallery.svg" alt="">
+                <div class="btn">
+                    <a id="more" href="">Haqqında</a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <img id="app" src="./assets/image/appbar2.webp" alt="">
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <div class="exchange">
+
+        <div class="row">
+            <h1>Valyuta məzənnələri</h1>
+            <div class="col-lg-4">
+                <h5>Nağd</h5>
+                <p>Yeniləndi 20.04.2023</p>
+                <ul id="ff">
+                    <div class="title">
+                        <span id="titles">Valyuta</span>
+                        <span id="titles">Alış</span>
+                        <span id="titles">Satış</span>
+                    </div>
+                    <li >
+                        <span id="monetary">USD</span>
+                        <span id="valudata">1.6970 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">1.7015 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">EUR</span>
+                        <span id="valudata">1.8313 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">1.8886 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">RUB</span>
+                        <span id="valudata">0.0199 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">0.0212 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">GBP</span>
+                        <span id="valudata">2.0816 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">2.1492 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="col-lg-4">
+                <h5>Nağdsız</h5>
+                <p>Yeniləndi 20.04.2023</p>
+                <ul id="ff">
+                    <div class="title">
+                        <span id="titles">Valyuta</span>
+                        <span id="titles">Alış</span>
+                        <span id="titles">Satış</span>
+                    </div>
+                    <li>
+                        <span id="monetary">USD</span>
+                        <span id="valudata">1.6900 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">1.7025 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">EUR</span>
+                        <span id="valudata">1.8373 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">1.8962 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">RUB</span>
+                        <span id="valudata">0.0199 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">0.0215 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">GBP</span>
+                        <span id="valudata">2.0753 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">2.1503 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="col-lg-4">
+                <h5>Kart</h5>
+                <p>Yeniləndi 20.04.2023</p>
+                <ul id="ff">
+                    <div class="title">
+                        <span id="titles">Valyuta</span>
+                        <span id="titles">Alış</span>
+                        <span id="titles">Satış</span>
+                    </div>
+                    <li>
+                        <span id="monetary">USD</span>
+                        <span id="valudata">1.6915 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata"id="valudata">1.7100 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">EUR</span>
+                        <span id="valudata">1.8448 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">1.8820 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">RUB</span>
+                        <span id="valudata">0.0204 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">0.0212 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li>
+                        <span id="monetary">GBP</span>
+                        <span id="valudata">2.0922 <i class="fa-solid fa-chevron-down"></i></span>
+                        <span id="valudata">2.1344 <i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                </ul>
+    
+            </div>
+            
+            
+        <div class="calculation">
+    
+            <div class="content">
+                <h4 id="spantitle">Valyuta kalkulyatoru</h4>
+                <h5 id="spantitle2" >Nağd məzənnə əsasında hesablanır</h5>
+            </div>
+    
+            <div class="input" id="exchange">
+                <input type="text" placeholder="0">
+                <select itemid="a" class="select__inp js--exchangecalc-inp js--exchangecalc-dropdown js--exchangecalc-inp--from select2-hidden-accessible" name="fromcurr" id="fromcurr" data-select2-id="fromcurr" tabindex="-1" aria-hidden="true">
+                    <option value="RUB">RUB</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD" selected="selected">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AZN">AZN</option>
+                </select>
+            </div>
+    
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+    
+    
+            <div class="output" id="exchange">
+                <input type="text" placeholder="0">
+                <select class="select__inp js--exchangecalc-inp js--exchangecalc-dropdown js--exchangecalc-inp--from select2-hidden-accessible" name="fromcurr" id="fromcurr" data-select2-id="fromcurr" tabindex="-1" aria-hidden="true">
+                    <option value="RUB">RUB</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AZN" selected="selected">AZN</option>
+                </select>
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+
+    <div class="info">
+        <div class="box"id="infobox">
+            <h5>Sənin kartın 1 yaşını qeyd edir</h5>
+            <p>Ölkə bank bazarında ilk olaraq kredit və multivalyutalı debet kartını özündə birləşdirən tək kartın – 
+                “Unibank”ın UCard məhsulunun müştərilərin istifadəsinə verilməsindən 1 il ötür. Dörd fərqli valyutada 
+                hesabları olan (AZN, USD, EUR, GBP) debet kartını və AZN valyutalı kredit xəttini birləşdirən UCard, 
+                hər parametri ilə...</p>
+            <span>13.04.2023</span>
+        </div>
+
+        <div class="box" id="infobox">
+            <h5>Unibank kartlarında 200 AZN dövriyyə tələbi ləğv edildi</h5>
+            <p>İndi Unibank kart sahiblərinin ay ərzində yüksək keşbek qazanmaq imkanı daha da artıb. Çünki artıq UCard-la 
+                yanacaqdoldurma, kafe-restoran və marketlərdə 5% keşbek qazanmaq üçün 200 manat dövriyyə tələbi yoxdur. 
+                Qeyd olunan xidmət və ticarət obyektlərində Apple Pay və Google Pay ilə ödəniş edən UCard ...</p>
+            <span>11.04.2023</span>
+        </div>
+
+        <div class="box"id="infobox">
+            <h5>Unibank storage alınması üçün tender keçirir</h5>
+            <p>Unibank KB storage alınması üçün tender keçirir. Tenderdə iştirak etmək istəyənlər qiymət təkliflərini bağlı 
+                və möhürlənmiş zərfdə Tender komissiyasının sədri Faiq Zeynalovun adına göndərməlidirlər. Zərflərin qəbulu üçün 
+                son tarix 14.04.2023 il, saat 12.00-dır.</p>
+            <span>04.04.2023</span>
+        </div>
+
+    </div>
+
+    <div class="allinfo">
+
+        <a href="">Bütün xəbərlər</a>
+
+    </div>
+
+    <div class="service">
+        <div class="location">
+            <h4>Xidmət</h4>
+            <h4>şəbəkəsi</h4>
+            <p>Filial və UTM-lərin ünvanları, həmçinin - iş saatları və digər məlumatlar haqqında ətraflı.</p>
+            <a id="moreinfo" href="">Daha ətraflı</a>
+            <img src="./assets/image/location.webp" alt="">
+        </div>
+
+        <div class="call">
+            <h4>Sualın var?</h4>
+            <h4>Bizimlə əlaqə saxla!</h4>
+            <p>Onlayn-məsləhətçi, 117 Çağrı mərkəzi və ya bank filiallarına müraciət et və suallarına cavab al. Rahat və asan!</p>
+            <a id="moreinfo" href="">Daha ətraflı</a>
+            <img src="./assets/image/callcenter.svg" alt="">
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="topfooter">
+
+            <ul id="ff">
+                <li><a id="title" href="">Kartlar</a></li>
+                <li><a id="titleitem" href="">Kartlar</a></li>
+                <li><a id="titleitem"  href="">Debet kartlar</a></li>
+                <li><a id="titleitem"  href="">Digər</a></li>
+              </ul>
+    
+              <ul id="ff">
+                <li><a id="title" href="">Kreditlər</a></li>
+                <li><a id="titleitem"  href="">Nağd</a></li>
+                <li><a id="titleitem"  href="">Mikro</a></li>
+                <li><a id="titleitem"  href="">İpoteka</a></li>
+            </ul>
+    
+            <ul id="ff">
+                <li><a id="title" href="">Əmanətlər</a></li>
+                <li><a id="titleitem"  href="">Əmanətlər</a></li>
+                <li><a id="titleitem"  href="">Proqressiv</a></li>
+                <li><a id="titleitem"  href="">Yığım</a></li>
+                <li><a id="titleitem"  href="">Faizlər əvvəlcədən</a></li>
+                <li><a id="titleitem" href="">Topla</a></li> 
+            </ul>
+    
+            <ul id="ff">
+                <li><a id="title" href="">Köçürmələr</a></li>
+                <li><a id="titleitem" href="">Ölkəxarici</a></li>
+                <li><a id="titleitem"  href="">Ölkədaxili</a></li>
+            </ul>
+    
+            <ul id="ff">
+                <li><a id="title" href="">Rəqəmsal bankçılıq</a></li>
+                <li><a id="titleitem"  href="">UBank</a></li>
+                <li><a id="titleitem"  href="">İnternet bankçılıq</a></li>
+                <li><a id="titleitem"  href="">Şəxsi kabinet</a></li>
+                <li><a id="titleitem"  href="">Unimiles şəxsi kabinet</a></li>
+                <li><a id="titleitem"  href="">Onlayn kredit ödənişi</a></li>
+                <li><a id="titleitem"  href="">Onlayn kredit müraciəti</a></li>
+            </ul>
+    
+            <ul id="ff">
+                <li><a id="title" href="">Əlavə xidmətlər</a></li>
+                <li><a id="titleitem"  href="">Hesablaşma-kassa xidməti</a></li>
+                <li><a id="titleitem"  href="">POS terminal / Smart kassa</a></li>
+                <li><a id="titleitem"  href="">Depozit qutuları</a></li>
+                <li><a id="titleitem"  href="">Onlayn ticarət (eCommerce)</a></li>
+            </ul>
+    
+            <ul id="ff">
+                <li><a id="title" href="">Bank haqqında</a></li>
+                <li><a id="titleitem"  href="">Rəhbərlik</a></li>
+                <li><a id="titleitem"  href="">Müxbir hesablar</a></li>
+                <li><a id="titleitem"  href="">Təklif və Şikayətlər</a></li>
+                <li><a id="titleitem"  href="">İnsan resursları</a></li>
+                <li><a id="titleitem"  href="">Hesabatlar</a></li>
+                <li><a id="titleitem"  href="">Digər sənədlər</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="middlefooter">
+            <a href=""><i id="ios" class="fa-brands fa-apple"></i></a>
+            <a href=""><i id="android" class="fa-solid fa-robot"></i></a>
+            <a href=""><i id="ficon"  class="fa-brands fa-facebook"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-twitter"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-youtube"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i id="ficon" class="fa-brands fa-telegram"></i></a>
+    
+        </div>
+    
+    
+        <div class="footerline">
+            <hr style="margin: 2rem 0;">
+        </div>
+    
+    
+        <div class="buttonfooter">
+    
+            <div class="row">
+    
+                <div class="col-lg-6">
+                    <p id="titleitem" >© 2023, Unibank - Sənin Bankın</p>
+                    <p id="titleitem" >Bütün hüquqlar qorunur.</p>
+                </div>
+    
+                <div class="col-lg-6">
+                    <a href=""><img src="./assets/image/adif.png" alt=""></a>
+                    <a href=""><img src="./assets/image/EHP.png" alt=""></a>
+                    <a href=""><img src="./assets/image/infobank.png" alt=""></a>
+                    <a href=""><img src="./assets/image/msp.png" alt=""></a>
+                </div>
+    
+            </div>
+                            
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/appp.js"></script>
+    <script src="./assets/js/basket.js"></script>
+    <script src="./assets/js/hr.js"></script>
+    <script src="./assets/js/internetbanking.js"></script>
+    <script src="./assets/js/services.js"></script>
+    
+</body>
+</html>

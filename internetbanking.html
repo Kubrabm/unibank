@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/image/logo-orange.webp">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <title>Unibank</title>
+
+</head>
+<body id="ibbidy">
+
+    <header id="ibheader">
+        <div class="internetbanking d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html"><img src="https://online.unibank.az/ibank/resources/imgs/icons/main-logo.png" alt=""></a>
+            </div>
+            <div class="language">
+                <a href="#" class="langborder">AZ</a>
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="index">
+                <div class="carusel">
+                    <div class="slider">
+                        <div class="pagechange">
+                            <div id="change1" class="change">
+                                <div class="image">
+                                    <img src="https://online.unibank.az/ibank/resources/imgs/icons/cards/slide-img-1.png" alt="">
+                                </div>
+                                <div class="slidertext">
+                                    <h4>Bir ekranda hər şeyi idarə et!</h4>
+                                    <p>Filiala getmədən, UBank-la bank əməliyyatlarını bir ekranda et!</p>
+                                </div>
+                            </div>
+                            <div id="change2" class="change d-none">
+                                <div class="image">
+                                    <img src="https://online.unibank.az/ibank/resources/imgs/icons/cards/slide-img-2.png" alt="">
+                                </div>
+                                <div class="slidertext">
+                                    <h4>Bir toxunuşla istənilən yerə köçürmə et!</span></h4>
+                                    <p>UBank vasitəsilə Western Union, Zolotaya Korona, CONTACT pul köçürmə sistemləri üzərindən bir toxunuşla dünyanın istənilən nöqtəsinə sürətli pul göndər!</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slidernav d-flex justify-content-center">
+                        <span id="slider1" class="activeslider"></span>
+                        <span id="slider2"></span>
+                    </div>
+                </div>
+                <div class="registr">
+                    <h3 class="d-flex justify-content-between">
+                        <span>İnternet Bankçılığa giriş</span>
+                        <a href="#">Qeydiyyat</a>
+                    </h3>
+                    <div class="login d-flex justify-content-between row">
+                        <div class="col-lg-6 col-6">
+                            <div class="img">
+                                <img src="https://online.unibank.az/ibank/qrCode?attr=c95a67d75a" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <div class="buttons">
+                                <button id="button1" class="actborder"><i class="fa-solid fa-mobile-button"></i><span id="text1" class="colorborder">FİN kod ilə</span></button>
+                                <button id="button2"><i class="fa-solid fa-sim-card"></i><span id="text2">Asan İmza</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <p><i class="fa-solid fa-circle-exclamation"></i><span>QR kod ilə giriş üçün UBank-dan istifadə et</span></p>
+                    <form>
+                        <span>Şəxsiyyət vəsiqəsinin FİN kodu</span>
+                        <i class="fa-regular fa-user man"></i>
+                        <i class="fa-solid fa-circle-exclamation error"></i>
+                        <input type="text">
+                        <span>Şifrə</span>
+                        <i class="fa-solid fa-lock close"></i>
+                        <input type="password">
+                        <span>Kodu daxil edin</span>
+                        <img class="pass" src="https://online.unibank.az/ibank/captcha?attr=29f607bbf2" alt="">
+                        <input type="text" class="textinp">
+                        <a href="#">Şifrəni unutmusuz?</a>
+                        <button><span class="enter">Daxil ol</span><i class="fa-solid fa-angle-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/appp.js"></script>
+    <script src="./assets/js/basket.js"></script>
+    <script src="./assets/js/hr.js"></script>
+    <script src="./assets/js/internetbanking.js"></script>
+    <script src="./assets/js/services.js"></script>
+</body>
+</html>

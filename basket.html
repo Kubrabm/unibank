@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/image/logo-orange.webp">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <title>Unibank</title>
+
+</head>
+<body>
+
+    <div class="customcontainer">
+        <div class="responsiveheader d-none">
+            <div class="hamburgermenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="https://unibank.az/assets/images/logonew-orange1.png" alt=""></a>
+            </div>
+            <div class="phone">
+                <a href="tel:117">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>117</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburgermenudiv d-none">
+        <div class="menuhamburger">
+            <a href="#" class="firstmenu active">Fərdi</a>
+            <a href="#" class="secondmenu">Biznes</a>
+        </div>
+        <div class="navigationmenu">
+            <a href="cards.html">Kartlar</a>
+            <a href="#">Kreditlər</a>
+            <a href="#">Əmanətlər</a>
+            <a href="#">Köçürmələr</a>
+            <a href="#">Rəqəmsal bankçılıq</a>
+            <a href="#">Əlavə xidmətlər</a>
+        </div>
+        <div class="navbarmenu">
+            <a href="service.html">Xidmət şəbəkəsi</a>
+            <a href="#">Bank haqqında</a>
+            <a href="#">Keşbek</a>
+            <a href="#">Tariflər</a>
+            <a href="hr.html">İnsan Resursları</a>
+            <a href="#">Bankla əlaqə və təkliflər</a>
+        </div>
+        <div class="optionmenu">
+            <div class="themehamburger">
+                <i class="fa-regular fa-moon night"></i>
+                <i id="sun" class="fa-regular fa-sun morning d-none"></i>
+            </div>
+            <div class="searchresp">
+                <span class="searchloopresp"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="langhamburger">
+                <a href="#" class="d-none">AZE</a>
+                <a href="#">ENG</a>
+                <a href="#">RUS</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+        <div class="topheader">
+
+            <div class="row">
+
+                <div class="col lg-7">
+                    <a href="./index.html"><img src="./assets/image/logo-orange.webp" alt=""></a>
+                    <a href="./services.html">Xidmət şəbəkəsi</a>
+                    <a href="">Bank haqqında</a>
+                    <a href="">Keşbek</a>
+                    <a href="">Tariflər</a>
+                    <a href="./hr.html">İnsan Resursları</a>
+                    <a href="">Bankla əlaqə və təkliflər</a>
+                </div>
+    
+                <div class="col-lg-5">
+                    <a id="individual" href="">Fərdi</a>
+                    <a id="business" href="">Biznes</a>
+                    <i id="changeBackground" class="fa-regular fa-moon"></i>
+                    <a id="langandsearch" href="">ENG</a>
+                    <a id="langandsearch" href="">RUS</a>
+                    <i id="opensearch" onclick="opensearchbox()" class="fa-solid fa-magnifying-glass"></i>
+                    <a href="./basket.html">
+                        <i class="fa-solid fa-basket-shopping">
+                            <span class="count">0</span>
+                        </i>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="search" id="searchbox">
+            <div class="cancel">
+                <a id="closesearchbrn" href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="text">
+                <h1>Axtarış</h1>
+            </div>
+            <div class="input">
+                <input type="text"><span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i></span>
+            </div>
+
+        </div>
+
+        <div id="buttonheader" class="buttonheader">
+
+            <div class="row">
+
+                <div class="col-lg-9">
+                    <a href="./cards.html">Kartlar</a>
+                    <a href="">Kreditlər</a>
+                    <a href="">Əmanətlər</a>
+                    <a href="">Köçürmələr</a>
+                    <a href="">Rəqəmsal bankçılıq</a>
+                    <a href="">Əlavə xidmətlər</a>
+                </div>
+    
+                <div class="col-lg-3">
+                    <a id="phone" href=""><i class="fa-solid fa-phone"></i>  117</a>
+                    <a id="internetbanking" href="./internetbanking.html"><i class="fa-solid fa-circle-arrow-right"></i>  İnternet bankçılıq</a>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="products_chart">
+        <div class="container">
+            <div class="alert">
+                <h1>Your cart is empty...</h1>
+            </div>
+            <div class="chart d-none">
+                <div class="row" id="save_products">
+                    
+                </div>
+            </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/appp.js"></script>
+    <script src="./assets/js/basket.js"></script>
+    <script src="./assets/js/hr.js"></script>
+    <script src="./assets/js/internetbanking.js"></script>
+    <script src="./assets/js/services.js"></script>
+
+</body>
+</html>
